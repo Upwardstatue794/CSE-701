@@ -10,10 +10,15 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
 				"-Wall",
 				"-Wextra",
-				""
+				"Wconversion",
+				"-Wsign-conversion",
+				"-Wshadow",
+				"Wpedantic",
+				"-std=c17",
+				"D__USE_MINGW_ANSI_STDIO=1",
 			],
 			"options": {
 				"cwd": "${fileDirname}"
