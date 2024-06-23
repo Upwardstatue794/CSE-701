@@ -4,21 +4,20 @@
 		{
 			"type": "cppbuild",
 			"label": "C/C++: gcc.exe build active file",
-			"command": "C:\\Program Files\\C++\\mingw64\\bin\\gcc.exe",
+			"command": "C:\\Users\\timpm\\mingw64\\bin\\gcc.exe",
 			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"${file}",
-				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"-Wall",
-				"-Wextra",
-				"Wconversion",
-				"-Wsign-conversion",
-				"-Wshadow",
-				"Wpedantic",
-				"-std=c17",
-				"D__USE_MINGW_ANSI_STDIO=1",
+    			"-g",
+    			"${file}",
+    			"-o",
+    			"${fileDirname}\\${fileBasenameNoExtension}.exe",
+    			"-Wall",
+    			"-Wextra",
+    			"-Wconversion",
+    			"-Wsign-conversion",
+    			"-Wshadow",
+    			"-Wpedantic",
+    			"-std=c17",
+    			"-D__USE_MINGW_ANSI_STDIO=1"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
@@ -30,7 +29,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: C:\\Program Files\\C++\\mingw64\\bin\\gcc.exe"
+			"detail": "compiler: C:\\timpm\\mingw64\\bin\\gcc.exe"
 		}
 	]
 }
