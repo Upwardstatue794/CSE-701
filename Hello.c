@@ -2,5 +2,6 @@
 
 int main(void)
 {
-    printf("Hello, World!\n");
+    printf("Hello, ");
+    printf("World!\n") // This line is missing a semicolon!
 }
